@@ -47,31 +47,16 @@ age = prompt('сколько вам лет?');
 alert(age);
 
 // 9.0 
-const person  = 
-{    
+const user  = {    
 name: "Cаша",
 age: 35,
-isAdmin: ("любой текст"),
-}
-alert (person);
+isAdmin: false,
+};
 
-// 9.1
-let user = 'city Of Residence';
-alert(user);
+user ["city Of Residence"] = "Москва";
 
-// 9.2
-let age = prompt('измените ваш возраст');
-alert(`Тебе ${age} лет!`);
+delete user["city Of Residence"]
 
-// 9.3
-let user = 'city Of Residence';
-delete user.cityOfResidence;
-alert(user);
-
-// 9.4
 let info = prompt("Какую информацию хотите узнать о пользователе?");
-alert(info);
 
-// 10
-let name = prompt('Введите ваше имя');
-alert(`Привет ${name}!`);
+alert(user[info]);
