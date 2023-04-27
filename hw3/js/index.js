@@ -34,42 +34,26 @@ let b = '3';
 alert(a > b);
 
 // 5 
-let monthNumber = String(prompt('К какому сезону принадлежит месяц?'));
+let monthNumber = String(prompt('К какому сезону принадлежит "Месяц"?...'));
 
 switch (monthNumber) {
     case 'Декабрь':
-        console.log('Зима');
-        break;
     case 'Январь':
-        console.log('Зима');
-        break;
     case 'Февраль':
         console.log('Зима');
         break;
     case 'Март':
-        console.log('Весна');
-        break;
     case 'Апрель':
-        console.log('Весна');
-        break;
     case 'Май':
         console.log('Весна');
         break;
     case 'Июнь':
-        console.log('Лето');
-        break;
     case 'Июль':
-        console.log('Лето');
-        break;
     case 'Август':
         console.log('Лето');
         break;
     case 'Сентябрь':
-        console.log('Осень');
-        break;
     case 'Октябрь':
-        console.log('Осень');
-        break;
     case 'Ноябрь':
         console.log('Осень');
         break;
