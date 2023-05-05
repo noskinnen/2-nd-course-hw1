@@ -1,6 +1,8 @@
 // 1
 let i = 1;
+
 let n = Number(prompt('напиши цифру 2 и я напишу слово ПРИВЕТ ! 2 раза'));
+
 while (i <= n) {
     alert('ПРИВЕТ !');
     i++;
@@ -8,6 +10,7 @@ while (i <= n) {
 
 // 2 
 let i = 0;
+
 do {
     console.log(i);
     i++;
@@ -16,68 +19,34 @@ do {
 
 // 3
 let i = 7;
+
 do {
     console.log(i);
     i++;
 } while (i < 23);
 
 // 4
-const user = { 
-	name: 'Коля',
-	salary: 200,
-};
-const user = { 
-	name: 'Вася',
-	salary: 300,
-};
-const user = { 
-	name: 'Петя',
-	salary: 400,
-};
+let user = [key];
 
-for (key in user) { 
-	if (user[key]) 200 { 
-		console.log('${key}: ${user[key]}'); 
-	}
-}
-
+while ( let key `Коля` = 200; `Вася` = 300; `Петя` = 400); {
+  for (key in user = 200); {
+    console.log(key);
+}}
 
 // 5 
-let i = 50;
 let n = 1000;
 
-while (i <= n) {
-    console.log(i);
-    i++;
+const num (let n <= 1; i < 50; i++);
+
+while (n / 2 < 50) {
+    console.log(num);
 };
+
 
 // 6
-let firstFriday = 7;
-do {
-    console.log(firstFriday);
-    firstFriday++;
-} while (firstFriday < 8);
+let firstFriday = 5;
 
-let daysInMonth = 31;
-do {
-    console.log(daysInMonth);
-    day += 7;
-} while (daysInMonth < 32);
-
-let day = firstFriday;
-do {
-    console.log(firstFriday);
-    firstFriday++;
-} while (firstFriday < 6);
-
-const week = {
-    mon: "Понедельник",
-    tue: "Вторник",
-    wed: "Среда",
-    thu: "Четверг",
-    fri: "Пятница",
-    sat: "Суббота",
-    sun: "Воскресенье",
-};
-
-
+for (let day = 1; day <= 31 ; day = day +=7) {
+        console.log (`отчетный день, ${firstFriday}-е число. Необходимо подготовить отчет.`);
+        firstFriday += 7;
+    } ;
