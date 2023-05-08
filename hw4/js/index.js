@@ -26,21 +26,23 @@ do {
 } while (i < 23);
 
 // 4
-let user = [key];
+let obj = {
+    "Коля": "200",
+    "Вася": "300",
+    "Петя": "400"
+  };
 
-while ( let key `Коля` = 200; `Вася` = 300; `Петя` = 400); {
-  for (key in user = 200); {
+  for (key in user = "200"); {
     console.log(key);
-}}
+}
 
 // 5 
 let n = 1000;
+let num = 0;
 
-const num (let n <= 1; i < 50; i++);
-
-while (n / 2 < 50) {
+while (n <= num, num < 50, num++); {
     console.log(num);
-};
+}
 
 
 // 6
