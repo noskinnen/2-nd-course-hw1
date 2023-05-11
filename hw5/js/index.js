@@ -1,8 +1,13 @@
 // 1 
+const name = (a,b) => {
+    
+}
 
 
 // 2 
-
+const name = (params) => {
+    
+}
 
 // 3 
 
