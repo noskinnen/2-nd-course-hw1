@@ -1,118 +1,114 @@
 // 1 
-function calc(a,b) {
-    let sum = a >= b;
-    console.log(`меньшее из двух чисел ${sum}`)
-}
-calc (8,4);
-calc (6,6);
+function calc(a,b) { 
+    return a < b ? a : b; 
+} 
+    console.log(calc(8,4)); 
+    console.log(calc(6,6)); 
 
 // 2 
-function sum(n,c) {
-    return n - c; 
+function numb(number) {
+    return number % 2 == 0 ? "четное" : "нечетное" ;
 }
-let result = sum ( 2 == 0) ;
-console.log(result);
+ console.log(numb(4));
+ console.log(numb(9));
 
-// 3.1 
+// 3.1
 function number(num) {
   return num * num
 }
- 
-console.log(number(10)) // => 100
+console.log(number(10))
 
 // 3.2 
-function inputNumber() {
-  const str = prompt('Введите число от 0 до 40')
-  const num = Number(str)
-  if(num >= 0 && num <= 40) {
-    return number(num)
-  }
-  return 'Вы ввели значение не из диапазона'
+function inputNumber(number) {
+    return number ** 2
 }
- 
-console.log(inputNumber()) // => 100
-
+const square = inputNumber(11);
+console.log (square) 
 
 // 4 
-function age (question, answer) {
-    let userAnswer = prompt(question);
-    if (userAnswer === answer) {
-        console.log('Верно');
+function userAge() {
+    let age = prompt("Сколько Вам Лет");
+    if (age < 0) {
+        return ("Вы ввели неправильное значение")
+    } else if (age <= 12) {
+        return ("Привет, друг!")
     } else {
-        console.log('не верно');
+        return ("Добро пожаловать!")
     }
-}
-age('Сколько Вам лет?', '18');
+} 
+alert (userAge())
 
 // 5 
-function src(a, b, s) {
-    let x;
-    switch (s) {
-        case 'add':
-            x = a + b;
-            break;
-        case 'subtract':
-            x = a - b;
-            break;
-        case 'multiply':
-            x = a * b;
-            break;
-        case 'divide':
-            x = a / b;
-            break;
-        default:
-            x = NaN;
+function mult (c,f) {
+    if (isNaN(c) || isNaN(f)) {
+        return "Одно или оба значения не являются числом"
+    } else {
+        return c * f 
     }
-    return x;
 }
+console.log(mult(24,6))
+console.log(mult("N","D"))
 
 // 6 
-const identity = (v) => v;
-identity('wow'); // wow
-
-const sum = identity((a, b) => a + b);
-sum(0, 10); 
+function cubeNumber () {
+    const number = prompt ("Введите число:", "");
+    if (isNaN(number)) {
+        return "Переданные параметры не являются числом";
+    } else {
+        const resultNumber = number ** 3 ;
+        return `${number} в кубе равняется ${resultNumber}`; 
+    }
+}
+console.log(cubeNumber());
+  
 
 // 7 
-getArea = (number = prompt(" введите радиус! ")) => {
-    let sum = 0;
-    let ok = false;
-    if (number >= 0) {
-      sum += Math.PI * Math.pow(number, 2);
-      result = "Площадь = " + sum + " см^2";
-    } else {
-      result = "должно быть числовое значение.";
+let circle1 = {
+    radius: 7,
+    getArea: function () {
+        return Math.PI * this.radius ** 2;
+    } , 
+    getPerimetr: function () {
+        return 2 * Math.PI * this.radius;
     }
-    return result;
-  };
-  console.log(getArea());
+}
+
+let circle2 = {
+    radius: 4,
+    getArea: function () {
+        return Math.PI * this.radius ** 2;
+    } , 
+    getPerimetr: function () {
+        return 2 * Math.PI * this.radius;
+    }
+}
+console.log(circle1.getArea());
+console.log(circle1.getPerimetr());
+
+console.log(circle2.getArea());
+console.log(circle2.getPerimetr());
 
 // 8 
-let monthNumber = String(prompt('К какому сезону принадлежит "Месяц"?...'));
-
-switch (monthNumber) {
-    case 'Декабрь':
-    case 'Январь':
-    case 'Февраль':
-        console.log('Зима');
-        break;
-    case 'Март':
-    case 'Апрель':
-    case 'Май':
-        console.log('Весна');
-        break;
-    case 'Июнь':
-    case 'Июль':
-    case 'Август':
-        console.log('Лето');
-        break;
-    case 'Сентябрь':
-    case 'Октябрь':
-    case 'Ноябрь':
-        console.log('Осень');
-        break;
-
-    default: 
-        console.log('что то не так');
-        break;
-}
+function seasons (month) {
+    month = Number(prompt("Введите номер месяца"));
+    if (month > 12 || isNaN(month) || month == false) {
+        let error = confirm("Такого месяца не существует! Или вы ввели не число.\n Повторим?");
+        if (error == true) {
+            seasons();
+        } else {
+            return 
+        }
+    } else if (month === 1 || month === 2 || month === 12) {
+        alert("Зима");
+    } else if (month >= 3 && month <= 5) {
+        alert("Весна");
+    } else if (month >= 6 && month <= 8) {
+        alert("Лето");
+    } else {
+        alert("Осень");
+    };
+    let repeat = confirm("Отлично! \n Сыграем еще раз?");
+    if (repeat == true) {
+        seasons();
+    } else (alert("До встречи!"));
+} 
