@@ -14,16 +14,14 @@ function numb(number) {
 
 // 3.1
 function number(num) {
-  return num * num
+  return num * 2;
 }
 console.log(number(10))
 
 // 3.2 
 function inputNumber(number) {
-    return number ** 2
 }
-const square = inputNumber(11);
-console.log (square) 
+console.log (number ** 2);
 
 // 4 
 function userAge() {
@@ -62,7 +60,7 @@ function cubeNumber () {
 console.log(cubeNumber());
   
 
-// 7 
+// 7.1
 let circle1 = {
     radius: 7,
     getArea: function () {
@@ -87,6 +85,20 @@ console.log(circle1.getPerimetr());
 
 console.log(circle2.getArea());
 console.log(circle2.getPerimetr());
+
+// 7.2
+function getArea() {
+    return Math.PI * this.radius **2;
+}
+function getPerimetr() {
+    return 2 * Math.PI * his.radius;
+}
+let Circle1 = {
+    radius: 7, getArea, getPerimetr,
+};
+let Circle2 = {
+    radius: 4, getArea, getPerimetr,
+}; 
 
 // 8 
 function seasons (month) {
