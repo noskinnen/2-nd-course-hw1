@@ -20,8 +20,8 @@ console.log(number(10))
 
 // 3.2 
 function inputNumber(number) {
-}
 console.log (number ** 2);
+} 
 
 // 4 
 function userAge() {
@@ -90,15 +90,23 @@ console.log(circle2.getPerimetr());
 function getArea() {
     return Math.PI * this.radius **2;
 }
+
 function getPerimetr() {
-    return 2 * Math.PI * his.radius;
+    return 2 * Math.PI * this.radius;
 }
+
 let Circle1 = {
-    radius: 7, getArea, getPerimetr,
-};
+    radius: 7, 
+    getArea, 
+    getPerimetr,
+}
+
 let Circle2 = {
-    radius: 4, getArea, getPerimetr,
-}; 
+    radius: 4, 
+    getArea, 
+    getPerimetr,
+}
+
 
 // 8 
 function seasons (month) {
