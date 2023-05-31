@@ -209,18 +209,21 @@ body {
 .game1 {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .game2 {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .game3 {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 800px;
-  width: 1440px;
+  width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
@@ -232,7 +235,6 @@ body {
   align-items: center;
   margin-top: 80px;
   flex-direction: column;
-  width: 1440px;
 }
 .footer-description {
   margin-top: 32px;
@@ -243,6 +245,7 @@ body {
   line-height: 15px;
   align-items: center;
   color: #FFFFFF;
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -411,14 +414,10 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    height: 800px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    background-image: url(img/background_game3.png);
-    width: 788.6px;
+    width: 100%;
     height: 800px;
-    left: -159.24px;
-    top: 3263.22px;
   }
 }/*# sourceMappingURL=style.css.map */

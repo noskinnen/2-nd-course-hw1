@@ -222,18 +222,21 @@ body {
 .game1 {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .game2 {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .game3 {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 800px;
-  width: 1440px;
+  width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
@@ -245,7 +248,6 @@ body {
   align-items: center;
   margin-top: 80px;
   flex-direction: column;
-  width: 1440px;
 
   &-description {
     margin-top: 32px;
@@ -256,6 +258,7 @@ body {
     line-height: 15px;
     align-items: center;
     color: #FFFFFF;
+    justify-content: center;
   }
 }
 
